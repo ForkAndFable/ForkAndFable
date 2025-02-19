@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Hub</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to ForkAndFable</h1>
+        <form onsubmit="return searchRecipe()">
+            <input type="text" id="searchBox" placeholder="Search for a recipe...">
+            <button type="submit">Search</button>
+        </form>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="recipes/cookie.html">Chocolate Chip Cookies</a></li>
+        </ul>
+    </nav>
+
+    <div class="slider">
+        <img src="https://source.unsplash.com/800x400/?food" class="slide">
+        <img src="https://source.unsplash.com/800x400/?dessert" class="slide">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
