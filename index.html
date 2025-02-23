@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ForkAndFable</title>
+    <link rel="stylesheet" href="styles/global.css">
+</head>
+<body>
+    <header>
+        <h1>ForkAndFable</h1>
+        <p>Welcome to ForkAndFable - Your guide to delicious recipes!</p>
+        <input type="text" id="searchBox" placeholder="Search for recipes...">
+    </header>
+
+    <section id="categories">
+        <button onclick="filterByCategory('Breakfast')">Breakfast</button>
+        <button onclick="filterByCategory('Lunch')">Lunch</button>
+        <button onclick="filterByCategory('Dinner')">Dinner</button>
+        <button onclick="filterByCategory('Desserts')">Desserts</button>
+        <button onclick="filterByCategory('Snacks')">Snacks</button>
+        <button onclick="filterByCategory('Drinks')">Drinks</button>
+    </section>
+
+    <script src="scripts/global.js"></script>
+</body>
+</html>
