@@ -1,48 +1,34 @@
-function filterByCategory(category) {
-    window.location.href = `category.html?category=${category}`;
+function toggleMenu() {
+    document.getElementById("sideMenu").style.width = "250px";
 }
 
-function loadRecipes(category) {
-    fetch("data/recipes.json")
-        .then(response => response.json())
-        .then(data => {
-            const recipesContainer = document.getElementById("recipesContainer");
-            recipesContainer.innerHTML = "";
-
-            data.recipes
-                .filter(recipe => recipe.category === category)
-                .forEach(recipe => {
-                    let recipeElement = document.createElement("div");
-                    recipeElement.innerHTML = `
-                        <h3>${recipe.name}</h3>
-                        <p>${recipe.description}</p>
-                        <button onclick="viewRecipe('${recipe.id}')">View Recipe</button>
-                    `;
-                    recipesContainer.appendChild(recipeElement);
-                });
-        });
+function closeMenu() {
+    document.getElementById("sideMenu").style.width = "0";
 }
 
-function viewRecipe(recipeId) {
-    window.location.href = `recipe.html?id=${recipeId}`;
+function searchRecipe() {
+    var query = document.getElementById("searchBox").value.toLowerCase();
+    if (query.includes("breakfast")) {
+        window.location.href = "recipes/breakfast.html";
+    } else if (query.includes("cookie")) {
+        window.location.href = "recipes/cookie.html";
+    } else {
+        alert("Recipe not found!");
+    }
+    return false;
 }
 
-function loadRecipeDetails(recipeId) {
-    fetch("data/recipes.json")
-        .then(response => response.json())
-        .then(data => {
-            const recipe = data.recipes.find(r => r.id === recipeId);
-            if (recipe) {
-                document.getElementById("recipeTitle").innerText = recipe.name;
-                document.getElementById("recipeDescription").innerText = recipe.description;
-                document.getElementById("recipeInstructions").innerText = recipe.instructions;
-                
-                let ingredientsList = document.getElementById("ingredientsList");
-                recipe.ingredients.forEach(ingredient => {
-                    let li = document.createElement("li");
-                    li.innerText = ingredient;
-                    ingredientsList.appendChild(li);
-                });
-            }
-        });
+// Slideshow
+let index = 0;
+function showSlides() {
+    let slides = document.getElementsByClassName("slide");
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    index++;
+    if (index > slides.length) { index = 1; }
+    slides[index - 1].style.display = "block";
+    setTimeout(showSlides, 2000);
 }
+
+window.onload = showSlides;
