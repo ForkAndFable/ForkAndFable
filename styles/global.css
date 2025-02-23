@@ -57,38 +57,45 @@ header {
 
 /* Search Bar */
 .search-container {
-    text-align: center;
-    margin: 20px 0;
-}
-
-#searchInput {
+   /* Centered Search Box */
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 60%;
-    padding: 12px;
-    border: 2px solid #2d6a4f;
-    border-radius: 25px;
-    font-size: 16px;
+    height: 70px;
+    margin: 40px auto;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+}
+
+/* Search Input */
+.search-container input {
+    width: 80%;
+    padding: 15px;
+    font-size: 18px;
+    border: none;
     outline: none;
-    transition: 0.3s;
 }
 
-#searchInput:focus {
-    border-color: #1b4332;
-}
-
-button {
-    padding: 12px 20px;
-    background-color: #1b4332;
+/* Search Button */
+.search-container button {
+    padding: 15px 20px;
+    font-size: 18px;
+    background-color: #28a745;
     color: white;
     border: none;
-    border-radius: 25px;
     cursor: pointer;
-    margin-left: 10px;
-    font-size: 16px;
-    transition: 0.3s;
+    border-radius: 5px;
 }
 
-button:hover {
-    background-color: #0b3d20;
+.search-container button:hover {
+    background-color: #218838;
+}
+
+
 }
 
 /* Recipe Categories (Centered) */
