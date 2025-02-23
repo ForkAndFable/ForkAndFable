@@ -1,139 +1,147 @@
-/* General Styles */
+
+/* General Styling */
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #f8f9fa;
     margin: 0;
     padding: 0;
-    text-align: center;
+    background-color: #f8f8f8;
+    color: #333;
 }
 
-/* Header Styling */
+/* Header */
 header {
-    background-color: #ff6f61;
+    background-color: #ff5733;
     color: white;
-    padding: 30px 0;
-    text-align: center;
-}
-
-h1 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-}
-
-p {
-    font-size: 1.2rem;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 /* Search Bar */
-#searchBox {
-    padding: 10px;
-    width: 60%;
-    max-width: 400px;
-    border: 2px solid #ff6f61;
-    border-radius: 5px;
-    margin-top: 10px;
-}
-
-/* Category Buttons */
-#categories {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin: 20px 0;
-}
-
-button {
-    background-color: #ff6f61;
-    color: white;
-    border: none;
-    padding: 15px 20px;
-    margin: 10px;
-    font-size: 1rem;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-button:hover {
-    background-color: #e35b52;
-}
-
-/* Recipes List */
-#recipesContainer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 20px;
-}
-
-#recipesContainer div {
-    background: white;
-    padding: 15px;
-    margin: 10px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    width: 250px;
-    transition: 0.3s;
-}
-
-#recipesContainer div:hover {
-    transform: scale(1.05);
-}
-
-/* Recipe Details */
-h2 {
-    color: #ff6f61;
-}
-
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-ul li {
-    background: #ffede8;
-    margin: 5px 0;
-    padding: 10px;
-    border-radius: 5px;
-}
 .search-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 20px 0;
+    margin: 30px 0;
 }
 
 #searchInput {
     width: 60%;
-    padding: 10px;
-    border: 2px solid #ccc;
-    border-radius: 5px;
+    padding: 12px;
+    border: 2px solid #ff5733;
+    border-radius: 25px;
     font-size: 16px;
+    outline: none;
+    transition: 0.3s;
+}
+
+#searchInput:focus {
+    border-color: #c70039;
 }
 
 button {
-    padding: 10px 15px;
-    background-color: #ff5733;
+    padding: 12px 20px;
+    background-color: #c70039;
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 25px;
     cursor: pointer;
     margin-left: 10px;
+    font-size: 16px;
+    transition: 0.3s;
 }
 
+button:hover {
+    background-color: #900c3f;
+}
+
+/* Recipe Categories */
+.categories {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    text-align: center;
+    margin: 30px;
+}
+
+.categories div {
+    padding: 20px;
+    background: linear-gradient(to bottom, rgba(255, 87, 51, 0.9), rgba(199, 0, 57, 0.9));
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: 0.3s;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+/* Adding images for categories */
+.categories div:nth-child(1) { background-image: url('../images/breakfast.jpg'); }
+.categories div:nth-child(2) { background-image: url('../images/lunch.jpg'); }
+.categories div:nth-child(3) { background-image: url('../images/dinner.jpg'); }
+.categories div:nth-child(4) { background-image: url('../images/desserts.jpg'); }
+.categories div:nth-child(5) { background-image: url('../images/snacks.jpg'); }
+.categories div:nth-child(6) { background-image: url('../images/drinks.jpg'); }
+
+.categories div:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Search Results */
 #searchResults div {
-    background: #f8f8f8;
-    padding: 15px;
-    margin: 10px 0;
-    border-radius: 8px;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    background: white;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 12px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.15);
+    transition: 0.3s;
 }
 
+#searchResults div:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
 
 /* Footer */
 footer {
-    margin-top: 20px;
-    padding: 20px;
-    background: #ff6f61;
+    background: #333;
     color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 40px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+footer a {
+    color: #ff5733;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.categories div, #searchResults div {
+    animation: fadeIn 0.5s ease-in-out;
 }
