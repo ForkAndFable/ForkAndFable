@@ -46,4 +46,16 @@ function displayRecipes(recipes) {
         `;
         container.innerHTML += recipeCard;
     });
+function filterByCategory(category) {
+    console.log("Filtering by category:", category);
+    window.location.href = `category.html?category=${category}`;
 }
+
+ 
+
+
+
+}
+
+
+
