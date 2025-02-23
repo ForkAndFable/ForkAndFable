@@ -3,30 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recipe Hub</title>
+    <title>ForkAndFable</title>
     <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <header>
-        <h1>Welcome to ForkAndFable</h1>
-        <form onsubmit="return searchRecipe()">
-            <input type="text" id="searchBox" placeholder="Search for a recipe...">
-            <button type="submit">Search</button>
-        </form>
-    </header>
-
-    <nav>
-        <ul>
-            <li><a href="recipes/cookie.html">Cookie Recipe</a></li>
-        </ul>
-    </nav>
-
-    <div class="slider">
-        <img src="https://www.pexels.com/photo/flat-lay-photography-of-vegetable-salad-on-plate-1640777/" class="slide">
-        <img src="https://source.unsplash.com/800x400/?dessert" class="slide">
+    <!-- Hamburger Menu -->
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+    <div class="side-menu" id="sideMenu">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeMenu()">×</a>
+        <a href="#categories">Categories</a>
+        <a href="#searchSection">Search</a>
+        <a href="#about">About</a>
     </div>
 
-    <script src="script.js"></script>
+    <!-- Sliding Image Section -->
+    <div class="slider">
+        <img src="https://source.unsplash.com/800x300/?food" class="slide">
+        <img src="https://source.unsplash.com/800x300/?pizza" class="slide">
+        <img src="https://source.unsplash.com/800x300/?burger" class="slide">
+    </div>
+
+    <!-- Website Title & Welcome Section -->
+    <div class="welcome">
+        <h1>ForkAndFable</h1>
+        <p>Welcome to ForkAndFable, your go-to destination for delicious recipes, curated categories, and easy meal ideas.</p>
+    </div>
+
+    <!-- Search Section -->
+    <div class="search-container" id="searchSection">
+        <form onsubmit="return searchRecipe()">
+            <input type="text" id="searchBox" placeholder="Search categories or recipes...">
+            <button type="submit">Search</button>
+        </form>
+    </div>
+
+    <!-- Categories Section -->
+    <div class="categories" id="categories">
+        <h2>Explore Categories</h2>
+        <div class="category-list">
+            <a href="recipes/breakfast.html"><img src="https://source.unsplash.com/150x150/?breakfast" alt="Breakfast">Breakfast</a>
+            <a href="recipes/lunch.html"><img src="https://source.unsplash.com/150x150/?lunch" alt="Lunch">Lunch</a>
+            <a href="recipes/dinner.html"><img src="https://source.unsplash.com/150x150/?dinner" alt="Dinner">Dinner</a>
+            <a href="recipes/desserts.html"><img src="https://source.unsplash.com/150x150/?dessert" alt="Desserts">Desserts</a>
+            <a href="recipes/snacks.html"><img src="https://source.unsplash.com/150x150/?snacks" alt="Snacks">Snacks</a>
+            <a href="recipes/drinks.html"><img src="https://source.unsplash.com/150x150/?drinks" alt="Drinks">Drinks</a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>Contact us: forkandfable.co@gmail.com</p>
+    </footer>
+
 </body>
 </html>
