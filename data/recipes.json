@@ -1,0 +1,313 @@
+[
+    {
+        "id": "pancakes",
+        "name": "Fluffy Pancakes",
+        "category": "Breakfast",
+        "image": "images/pancakes.jpg",
+        "description": "Soft, fluffy pancakes perfect for breakfast.",
+        "nutrition": "320 kcal | 8g protein | 45g carbs | 12g fat",
+        "diet": "🟢 Vegetarian",
+        "ingredients": [
+            "1 cup flour",
+            "1 tbsp sugar",
+            "1 tsp baking powder",
+            "1 egg",
+            "1 cup milk",
+            "1 tbsp melted butter"
+        ],
+        "instructions": [
+            "Mix dry ingredients together.",
+            "Add milk, egg, and butter; whisk until smooth.",
+            "Heat a pan and cook pancakes until golden brown.",
+            "Serve with syrup or fruits."
+        ]
+    },
+    {
+        "id": "white-sauce-pasta",
+        "name": "White Sauce Pasta",
+        "category": "Lunch",
+        "image": "images/pasta.jpg",
+        "description": "Creamy white sauce pasta loaded with veggies.",
+        "nutrition": "450 kcal | 12g protein | 20g fat",
+        "diet": "🟢 Vegetarian",
+        "ingredients": [
+            "2 cups pasta",
+            "1 cup milk",
+            "1/2 cup cheese",
+            "Salt & pepper"
+        ],
+        "instructions": [
+            "Boil pasta until cooked.",
+            "Make white sauce with milk and flour.",
+            "Mix pasta with sauce and serve."
+        ]
+    },
+    {
+        "id": "chicken-biryani",
+        "name": "Chicken Biryani",
+        "category": "Dinner",
+        "image": "images/chicken-biryani.jpg",
+        "description": "Aromatic and flavorful Indian rice dish with spiced chicken.",
+        "nutrition": "560 kcal | 25g protein | 65g carbs | 20g fat",
+        "diet": "🔴 Non-Vegetarian",
+        "ingredients": [
+            "2 cups basmati rice",
+            "500g chicken",
+            "1 cup yogurt",
+            "2 onions, sliced",
+            "1 tbsp biryani masala",
+            "Fresh cilantro and mint"
+        ],
+        "instructions": [
+            "Marinate chicken with yogurt and spices for 2 hours.",
+            "Cook onions until golden brown.",
+            "Layer chicken and rice, cook on low heat for 30 minutes.",
+            "Garnish and serve hot."
+        ]
+    },
+    {
+        "id": "chocolate-brownies",
+        "name": "Chocolate Brownies",
+        "category": "Desserts",
+        "image": "images/chocolate-brownies.jpg",
+        "description": "Rich and fudgy homemade chocolate brownies.",
+        "nutrition": "350 kcal | 5g protein | 40g carbs | 18g fat",
+        "diet": "🟢 Vegetarian",
+        "ingredients": [
+            "1/2 cup butter",
+            "1 cup sugar",
+            "2 eggs",
+            "1/3 cup cocoa powder",
+            "1/2 cup flour",
+            "1 tsp vanilla extract"
+        ],
+        "instructions": [
+            "Melt butter and mix with cocoa powder and sugar.",
+            "Add eggs and vanilla, then fold in flour.",
+            "Bake at 180°C (350°F) for 25 minutes.",
+            "Let cool and cut into squares."
+        ]
+    },
+    {
+        "id": "spicy-nachos",
+        "name": "Spicy Nachos",
+        "category": "Snacks",
+        "image": "images/spicy-nachos.jpg",
+        "description": "Crispy nachos topped with melted cheese and jalapeños.",
+        "nutrition": "320 kcal | 8g protein | 35g carbs | 18g fat",
+        "diet": "🟢 Vegetarian",
+        "ingredients": [
+            "1 bag tortilla chips",
+            "1 cup shredded cheese",
+            "1/2 cup jalapeños",
+            "1/2 cup salsa",
+            "1/4 cup sour cream"
+        ],
+        "instructions": [
+            "Spread chips on a baking tray.",
+            "Sprinkle cheese and jalapeños on top.",
+            "Bake at 180°C (350°F) for 10 minutes.",
+            "Serve with salsa and sour cream."
+        ]
+    },
+    {
+        "id": "mint-mojito",
+        "name": "Mint Mojito",
+        "category": "Drinks",
+        "image": "images/mojito.jpg",
+        "description": "A refreshing Cuban cocktail with lime, mint, and soda.",
+        "nutrition": "160 kcal | 15g carbs | 0g fat",
+        "diet": "🔵 Contains Alcohol",
+        "ingredients": [
+            "10 mint leaves",
+            "1 lime",
+            "2 tbsp sugar",
+            "1.5 oz white rum",
+            "Club soda"
+        ],
+        "instructions": [
+            "Muddle mint leaves and lime.",
+            "Add sugar and muddle again.",
+            "Fill glass with ice.",
+            "Pour rum, top with soda, stir."
+        ]
+    },
+    {
+        "id": "blue-lagoon",
+        "name": "Blue Lagoon",
+        "category": "Drinks",
+        "image": "images/bluelagoon.jpg",
+        "description": "A vibrant blue cocktail made with vodka and lemonade.",
+        "nutrition": "180 kcal | 20g carbs | 10% alcohol",
+        "diet": "🔵 Contains Alcohol",
+        "ingredients": [
+            "1.5 oz vodka",
+            "1 oz blue curaçao",
+            "4 oz lemonade",
+            "Ice cubes"
+        ],
+        "instructions": [
+            "Fill glass with ice cubes.",
+            "Pour vodka and blue curaçao.",
+            "Top with lemonade and stir.",
+            "Garnish with lemon and cherry."
+        ]
+    }
+    {            "id": "idli",
+            "name": "Soft Idli",
+            "category": "Breakfast",
+            "image": "images/idli.jpg",
+            "description": "Steamed South Indian rice cakes, light and fluffy.",
+            "nutrition": "150 kcal | 3g protein | 32g carbs | 0.5g fat",
+            "diet": "🟢 Vegetarian",
+            "ingredients": [
+                "2 cups idli rice",
+                "1 cup urad dal (black gram lentils)",
+                "1 tsp fenugreek seeds",
+                "Salt to taste",
+                "Water as needed"
+        ],
+            "instructions": [
+                "Soak rice and dal separately for 6 hours.",
+                "Grind to a smooth batter and ferment overnight.",
+                "Pour batter into idli molds and steam for 10 minutes.",
+                "Serve hot with coconut chutney and sambar."
+       ]
+    },
+    {
+            "id": "masala-dosa",
+            "name": "Crispy Masala Dosa",
+            "category": "Breakfast",
+            "image": "images/masala-dosa.jpg",
+            "description": "Crispy South Indian dosa filled with spiced potato stuffing.",
+            "nutrition": "280 kcal | 6g protein | 45g carbs | 7g fat",
+            "diet": "🟢 Vegetarian",
+            "ingredients": [
+                "2 cups dosa batter",
+                "2 potatoes (boiled & mashed)",
+                "1 onion (chopped)",
+                "1 tsp mustard seeds",
+                "1/2 tsp turmeric",
+                "Salt to taste"
+        ],
+            "instructions": [
+                "Heat oil, add mustard seeds, onions, and spices.",
+                "Add mashed potatoes and mix well.",
+                "Spread dosa batter thinly on a hot pan.",
+                "Place the potato filling inside, fold and serve with chutney."
+        ]
+    },
+    {
+            "id": "sambar",
+            "name": "Traditional Sambar",
+            "category": "Lunch",
+            "image": "images/sambar.jpg",
+            "description": "A flavorful South Indian lentil stew with vegetables.",
+            "nutrition": "190 kcal | 8g protein | 35g carbs | 2g fat",
+            "diet": "🟢 Vegetarian",
+            "ingredients": [
+                "1 cup toor dal (pigeon peas)",
+                "1 drumstick (vegetable)",
+                "1 tomato (chopped)",
+                "1/2 tsp turmeric",
+                "1 tbsp sambar powder",
+                "1/2 tsp mustard seeds",
+                "2 dried red chilies"
+        ],
+            "instructions": [
+                "Pressure cook dal with turmeric until soft.",
+                "Add vegetables, sambar powder, and tamarind extract.",
+                "In a pan, temper mustard seeds and red chilies.",
+                "Mix with cooked sambar and serve with rice."
+        ]
+    },
+    {
+            "id": "chettinad-chicken",
+            "name": "Chettinad Chicken Curry",
+            "category": "Dinner",
+            "image": "images/chettinad-chicken.jpg",
+            "description": "A fiery and aromatic South Indian chicken curry.",
+            "nutrition": "480 kcal | 32g protein | 18g carbs | 30g fat",
+            "diet": "🔴 Non-Vegetarian",
+            "ingredients": [
+                "500g chicken (cut into pieces)",
+                "2 onions (chopped)",
+                "1 tbsp ginger-garlic paste",
+                "1/2 cup coconut (grated)",
+                "1 tbsp Chettinad masala powder",
+                "1/2 tsp turmeric"
+        ],
+            "instructions": [
+                "Marinate chicken with turmeric and salt.",
+                "Sauté onions, add ginger-garlic paste and masala.",
+                "Add chicken and cook for 25 minutes.",
+                "Garnish with fresh coriander and serve with rice."
+        ]
+    },
+    {
+            "id": "mango-payasam",
+            "name": "Mango Payasam",
+            "category": "Desserts",
+            "image": "images/mango-payasam.jpg",
+            "description": "A sweet and creamy South Indian dessert with mango.",
+            "nutrition": "220 kcal | 5g protein | 40g carbs | 5g fat",
+            "diet": "🟢 Vegetarian",
+            "ingredients": [
+                "1 ripe mango (pureed)",
+                "1/2 cup rice",
+                "2 cups milk",
+                "1/2 cup sugar",
+                "2 tbsp ghee",
+                "1/4 tsp cardamom powder"
+        ],
+            "instructions": [
+                "Cook rice in milk until soft.",
+                "Add mango puree, sugar, and cardamom powder.",
+                "Simmer for 5 minutes, then drizzle ghee on top.",
+                "Serve warm or chilled."
+        ]
+    },
+    {
+            "id": "banana-chips",
+            "name": "Kerala Banana Chips",
+            "category": "Snacks",
+            "image": "images/banana-chips.jpg",
+            "description": "Crispy and golden banana chips fried in coconut oil.",
+            "nutrition": "270 kcal | 2g protein | 35g carbs | 15g fat",
+            "diet": "🟢 Vegetarian",
+            "ingredients": [
+                "2 raw bananas",
+                "1/2 tsp turmeric",
+                "Salt to taste",
+                "1 cup coconut oil"
+        ],
+            "instructions": [
+                "Peel and slice bananas thinly.",
+                "Mix with turmeric and salt.",
+                "Heat coconut oil and fry slices until crisp.",
+                "Drain excess oil and serve."
+        ]
+    },
+    {
+            "id": "filter-coffee",
+            "name": "South Indian Filter Coffee",
+            "category": "Drinks",
+            "image": "images/filter-coffee.jpg",
+            "description": "Aromatic and strong South Indian filter coffee.",
+            "nutrition": "90 kcal | 3g protein | 10g carbs | 3g fat",
+            "diet": "🟢 Vegetarian",
+            "ingredients": [
+                "2 tbsp ground coffee",
+                "1 cup hot water",
+                "1/2 cup milk",
+                "1 tbsp sugar"
+        ],
+            "instructions": [
+                "Brew coffee in a filter using hot water.",
+                "Boil milk and mix with brewed coffee.",
+                "Add sugar to taste and froth the coffee by pouring back and forth.",
+                "Serve hot in a traditional tumbler."
+        ]
+    }
+]
+    
